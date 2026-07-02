@@ -475,12 +475,17 @@
 
     <section id="contact">
         <h2>Get In Touch</h2>
-        <form class="contact-form" action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="656523e7-40ae-4a60-9bba-01711d675fda">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        
+        <input type="hidden" name="redirect" value="https://yourwebsite.com/success">
+        
+        <button type="submit" class="btn">Send Message</button>
+    </form>
     </section>
 
     <footer>
